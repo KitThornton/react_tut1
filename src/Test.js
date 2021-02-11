@@ -8,12 +8,14 @@ function Test() {
     };
 
     return (
-        <div>
+        <fragment>
             {PopulateElement(user)}
             {PopulateElement()}
-        </div>
+            {TickingClock()}
+            <Welcome firstName="Nanhah" lastName="Cute"/>
+        </fragment>
     );
-};
+}
 
 function PopulateElement(user)
 {
@@ -39,6 +41,25 @@ function PopulateElement(user)
 function FormatUserName(user)
 {
     return user.firstName + ' ' + user.lastName;
+}
+
+function TickingClock()
+{
+    return (
+        <div>
+            It is currently {new Date().toLocaleTimeString()}
+        </div>
+    )
+}
+
+function Welcome(props){
+    return (
+        <ol>
+            <li>First: {FormatUserName(props)}</li>
+            <li>Second: Jonty</li>
+            <li>Third: Kit</li>
+        </ol>
+    )
 }
 
 export default Test;
