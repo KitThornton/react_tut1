@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
+import Clock from './Clock'
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,6 +13,7 @@ function RenderThis() {
             <div>
                 {/*<App />*/}
                 <Test/>
+                <Clock/>
             </div>
         </React.StrictMode>,
         document.getElementById('root')

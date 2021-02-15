@@ -1,5 +1,7 @@
 // So here we will test adding in an additional file
 
+import {Fragment} from "react";
+
 function Test() {
 
     const user = {
@@ -8,12 +10,12 @@ function Test() {
     };
 
     return (
-        <fragment>
+        <Fragment>
             {PopulateElement(user)}
             {PopulateElement()}
-            {TickingClock()}
             <Welcome firstName="Nanhah" lastName="Cute"/>
-        </fragment>
+            <Comment text="hello you cunt" date={ new Date() }/>
+        </Fragment>
     );
 }
 
@@ -43,15 +45,6 @@ function FormatUserName(user)
     return user.firstName + ' ' + user.lastName;
 }
 
-function TickingClock()
-{
-    return (
-        <div>
-            It is currently {new Date().toLocaleTimeString()}
-        </div>
-    )
-}
-
 function Welcome(props){
     return (
         <ol>
@@ -61,5 +54,24 @@ function Welcome(props){
         </ol>
     )
 }
+
+function Comment(props){
+    return (
+        <div className="Comment">
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date">
+                {formatDate(props.date)}
+            </div>
+        </div>
+
+    )
+}
+
+function formatDate(date) {
+    return date.toLocaleDateString();
+}
+
 
 export default Test;
