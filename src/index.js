@@ -20,7 +20,7 @@ function RenderThis() {
     );
 }
 
-RenderThis()
+// RenderThis()
 
 setInterval(RenderThis, 1000);
 
