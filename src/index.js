@@ -4,6 +4,8 @@ import './index.css';
 // import App from './App';
 import Clock from './Clock'
 import Test from './Test';
+import Toggle from './HandlingEvents';
+import Cond from './ConditionalRendering';
 import reportWebVitals from './reportWebVitals';
 
 function RenderThis() {
@@ -14,6 +16,8 @@ function RenderThis() {
                 {/*<App />*/}
                 <Test/>
                 <Clock/>
+                <Toggle/>
+                <Cond/>
             </div>
         </React.StrictMode>,
         document.getElementById('root')
