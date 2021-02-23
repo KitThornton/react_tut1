@@ -6,6 +6,7 @@ import Clock from './Clock'
 import Test from './Test';
 import Toggle from './HandlingEvents';
 import Cond from './ConditionalRendering';
+import Lists from './ListsAndKeys';
 import reportWebVitals from './reportWebVitals';
 
 function RenderThis() {
@@ -18,6 +19,9 @@ function RenderThis() {
                 <Clock/>
                 <Toggle/>
                 <Cond/>
+            </div>
+            <div>
+                <Lists/>
             </div>
         </React.StrictMode>,
         document.getElementById('root')
