@@ -7,7 +7,7 @@ import Test from './Test';
 import Toggle from './HandlingEvents';
 import Cond from './ConditionalRendering';
 import Lists from './ListsAndKeys';
-import Forms from './Forms';
+import Form from './Forms';
 import reportWebVitals from './reportWebVitals';
 
 function RenderThis() {
@@ -26,7 +26,8 @@ function RenderThis() {
             </div>
             <br/>
             <div>
-                <Forms/>
+                <Form.Forms/>
+                <Form.Select/>
             </div>
         </React.StrictMode>,
         document.getElementById('root')
