@@ -9,7 +9,9 @@ import Cond from './ConditionalRendering';
 import Lists from './ListsAndKeys';
 import Form from './Forms';
 import Calculator from './LiftingStateUp';
+import WelcomeDialog from './Composition_Inheritance';
 import reportWebVitals from './reportWebVitals';
+import SignUpDialog from "./Composition_Inheritance";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -31,6 +33,9 @@ ReactDOM.render(
         <br/>
         <div>
             <Calculator />
+        </div>
+        <div>
+            <SignUpDialog />
         </div>
     </React.StrictMode>,
     document.getElementById('root')
