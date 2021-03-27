@@ -1,42 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import Clock from './Clock'
-import Test from './Test';
-import Toggle from './HandlingEvents';
-import Cond from './ConditionalRendering';
-import Lists from './ListsAndKeys';
-import Form from './Forms';
-import Calculator from './LiftingStateUp';
-import WelcomeDialog from './Composition_Inheritance';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SignUpDialog from "./Composition_Inheritance";
+
 
 ReactDOM.render(
     <React.StrictMode>
-        <div>
-            {/*<App />*/}
-            <Test/>
-            <Clock/>
-            <Toggle/>
-            <Cond/>
-        </div>
-        <div>
-            <Lists/>
-        </div>
-        <br/>
-        <div>
-            <Form.Forms/>
-            <Form.Select/>
-        </div>
-        <br/>
-        <div>
-            <Calculator />
-        </div>
-        <div>
-            <SignUpDialog />
-        </div>
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
     );
