@@ -3,13 +3,7 @@
 // it using set state
 
 import * as React from "react";
-import Table from "react-bootstrap/Table";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// let ReactBsTable  = require('react-bootstrap-table');
-// let BootstrapTable = ReactBsTable.BootstrapTable;
-// let TableHeaderColumn = ReactBsTable.TableHeaderColumn;
-
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 class DynamicTable extends React.Component {
@@ -44,7 +38,7 @@ class DynamicTable extends React.Component {
     render() {
         return(
             <div className="container">
-                <BootstrapTable data={this.state.students} version="4" ref="table" striped bordered hover responsive>
+                <BootstrapTable data={this.state.students} size={"sm"} version="4" ref="table" striped bordered hover responsive>
                     <TableHeaderColumn width={"10%"} dataField='id' headerAlign={"center"} dataAlign={"center"} isKey={true}>
                         Id
                     </TableHeaderColumn>
