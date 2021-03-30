@@ -1,6 +1,6 @@
-import './App.css';
+import './Stylesheets/App.css';
 import {React, Fragment} from 'react';
-import './index.css';
+import './Stylesheets/index.css';
 import Clock from './Clock'
 import Test from './Test';
 import Toggle from './HandlingEvents';
@@ -49,7 +49,7 @@ function App() {
         {/*  <SignUpDialog/>*/}
         {/*</div>*/}
         {/*<div>*/}
-          <DynamicTable />
+        {/*  <DynamicTable />*/}
         </div>
       </Fragment>
   )
