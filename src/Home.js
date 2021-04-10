@@ -3,17 +3,20 @@
 // Will create multiple components, will split them up after
 
 import {Fragment} from "react";
-import Navbar_1 from "./Navbar_1";
+import Navbar_1 from "./ExhallCC/Navbar_1";
 import './Stylesheets/Home.css'
 import {Container} from "react-bootstrap"
 
 function Home() {
     return (
         <Fragment>
-            <Navbar_1 />
-            <Container className="Header">
+            <Container>
+                <Navbar_1 />
+
+            {/*    Let's try adding a carousel */}
 
             </Container>
+
         </Fragment>
 
     )

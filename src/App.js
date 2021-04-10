@@ -12,7 +12,7 @@ import WelcomeDialog from './Composition_Inheritance';
 import reportWebVitals from './reportWebVitals';
 import SignUpDialog from "./Composition_Inheritance";
 import DynamicTable from './Table';
-import Navbar_1 from './Navbar_1';
+import Navbar_1 from './ExhallCC/Navbar_1';
 
 function App() {
   return (

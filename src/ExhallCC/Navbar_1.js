@@ -1,7 +1,7 @@
 // So, let's test out some code for some nav-bars!
 import * as React from "react";
 import {Navbar, NavDropdown, Nav, Form, Button, FormControl } from "react-bootstrap";
-import logo from './exhall_logo.jpg';
+import logo from '../exhall_logo.jpg';
 
 class Navbar_1 extends React.Component{
 
@@ -29,14 +29,14 @@ class Navbar_1 extends React.Component{
                             <NavDropdown.Item href="../batting/secondXI">Second XI</NavDropdown.Item>
                             <NavDropdown.Item href="../batting/thirdXI">Third XI</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="../batting/combined">Combined</NavDropdown.Item>
+                            <NavDropdown.Item href="../batting/career">Career</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Bowling" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="../bowling/firstXI">First XI</NavDropdown.Item>
                             <NavDropdown.Item href="../bowling/secondXI">Second XI</NavDropdown.Item>
                             <NavDropdown.Item href="../bowling/thirdXI">Third XI</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="../bowling/combined">Combined</NavDropdown.Item>
+                            <NavDropdown.Item href="../bowling/career">Career</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="../players">Players</Nav.Link>
                     </Nav>
