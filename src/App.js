@@ -13,6 +13,7 @@ import reportWebVitals from './reportWebVitals';
 import SignUpDialog from "./Composition_Inheritance";
 import DynamicTable from './Table';
 import Navbar_1 from './ExhallCC/Navbar_1';
+import JumbotronPage from './ExhallCC/Jumbotron'
 
 function App() {
   return (

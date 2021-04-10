@@ -2,21 +2,21 @@
 // Just some ideas, pretty rough outline
 // Will create multiple components, will split them up after
 
-import {Fragment} from "react";
+import {Fragment, React} from "react";
 import Navbar_1 from "./ExhallCC/Navbar_1";
 import './Stylesheets/Home.css'
 import {Container} from "react-bootstrap"
+import {MDBContainer} from "mdbreact"
+import {JumbotronPage, JumbotronPage2} from "./ExhallCC/Jumbotron";
 
 function Home() {
     return (
         <Fragment>
-            <Container>
+            {/*<MDBContainer>*/}
                 <Navbar_1 />
-
-            {/*    Let's try adding a carousel */}
-
-            </Container>
-
+                <JumbotronPage />
+                {/*<JumbotronPage2 />*/}
+            {/*</MDBContainer>*/}
         </Fragment>
 
     )
