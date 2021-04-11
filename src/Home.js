@@ -7,15 +7,15 @@ import Navbar_1 from "./ExhallCC/Navbar_1";
 import './Stylesheets/Home.css'
 import {Container} from "react-bootstrap"
 import {MDBContainer} from "mdbreact"
-import {JumbotronPage, JumbotronPage2} from "./ExhallCC/Jumbotron";
+import JumbotronPage2 from "./ExhallCC/Jumbotron";
 
 function Home() {
     return (
         <Fragment>
             {/*<MDBContainer>*/}
                 <Navbar_1 />
-                <JumbotronPage />
-                {/*<JumbotronPage2 />*/}
+                {/*<JumbotronPage />*/}
+                <JumbotronPage2 />
             {/*</MDBContainer>*/}
         </Fragment>
 

@@ -21,9 +21,15 @@ class Navbar_1 extends React.Component{
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="../hallOfFame">Hall of Fame</Nav.Link>
+                        <Nav.Link href="../club">The Club</Nav.Link>
+                        {/*<Nav.Link href="../hallOfFame">Hall of Fame</Nav.Link>*/}
+                        <NavDropdown title="Trophy Cabinet" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="../trophies/players">Players</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="../trophies/club">Club</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="../players">Players</Nav.Link>
                         {/*<Nav.Link href="#aboutTheClub">About the Club</Nav.Link>*/}
-                        <Nav.Link href="../top10s">Top 10s</Nav.Link>
                         <NavDropdown title="Batting" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="../batting/firstXI">First XI</NavDropdown.Item>
                             <NavDropdown.Item href="../batting/secondXI">Second XI</NavDropdown.Item>
@@ -38,7 +44,8 @@ class Navbar_1 extends React.Component{
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="../bowling/career">Career</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="../players">Players</Nav.Link>
+                        <Nav.Link href="../top10s">Top 10s</Nav.Link>
+                        <Nav.Link href="../achievements">Achievements</Nav.Link>
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search for a player..." className="mr-sm-2" />
