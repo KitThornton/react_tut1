@@ -7,7 +7,7 @@ import CardGroup from './CardGroup';
 
 const JumbotronPage = () => {
     return (
-        // <MDBContainer>
+        <MDBContainer style={{ padding: 0 }}>
             <MDBRow>
                 <MDBCol>
                     <MDBJumbotron fluid style={{ padding: 0 }}>
@@ -24,57 +24,31 @@ const JumbotronPage = () => {
                     </MDBJumbotron>
                 </MDBCol>
             </MDBRow>
-        // </MDBContainer>
+        </MDBContainer>
     )
 }
 
 const JumbotronPage2 = () => {
     return (
-        // <MDBContainer className="text-center">
+        // <div style={{ padding: 0 }} className="text-center">
             <MDBRow>
                 <MDBCol>
-                    <MDBJumbotron className="p-0">
+                    <MDBJumbotron style={{ padding: 0 }} className="p-0">
                         <MDBCardImage
                             className="img-fluid"
                             src={img}
                             width={"100%"}
                         />
-                        <MDBCardBody>
+                        <MDBCardBody className="light">
                             <MDBRow>
-                                {/*<MDBCol>*/}
-                                {/*    <MDBCardTitle className="h3">Exhall and Wixford CC</MDBCardTitle>*/}
-                                {/*    <hr className="my-4" />*/}
-                                {/*    <MDBCardText>*/}
-                                {/*        Some quick example text to build on the card title and make up*/}
-                                {/*        the bulk of the card&apos;s content.*/}
-                                {/*    </MDBCardText>*/}
-                                {/*</MDBCol>*/}
-                                {/*<MDBCol>*/}
-                                    {/*<MDBCardTitle className="h3">Player Database</MDBCardTitle>*/}
-                                    {/*<hr className="my-4" />*/}
-                                    {/*<div className="pt-2">*/}
-                                    {/*    <MDBBtn color="primary" className="waves-effect">*/}
-                                    {/*        Buy now <MDBIcon far icon="gem" />*/}
-                                    {/*    </MDBBtn>*/}
-                                    {/*    <MDBBtn outline color="primary" className="waves-effect">*/}
-                                    {/*        Download <MDBIcon icon="download" />*/}
-                                    {/*    </MDBBtn>*/}
-                                    {/*    <MDBBtn color="success">Success</MDBBtn>*/}
-                                    {/*</div>*/}
-                                    {/*<Pills />*/}
-                                {/*</MDBCol>*/}
                                 <CardGroup />
                             </MDBRow>
-
-                            {/*<MDBBtn href="#" gradient="purple" rounded>*/}
-                            {/*    BUTTON*/}
-                            {/*</MDBBtn>*/}
                             <br/>
                         </MDBCardBody>
                     </MDBJumbotron>
                 </MDBCol>
             </MDBRow>
-        // </MDBContainer>
+        // </div>
     )
 }
 

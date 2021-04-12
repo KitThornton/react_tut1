@@ -12,16 +12,15 @@ import JumbotronPage2 from "./ExhallCC/Jumbotron";
 function Home() {
     return (
         <Fragment>
-            {/*<MDBContainer>*/}
+            <div style={{ padding: 0 }} >
+                {/*<MDBContainer>*/}
                 <Navbar_1 />
                 {/*<JumbotronPage />*/}
                 <JumbotronPage2 />
-            {/*</MDBContainer>*/}
+                {/*</MDBContainer>*/}
+            </div>
         </Fragment>
-
     )
-
-
 }
 
 export default Home
